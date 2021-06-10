@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'i(md_hv=u8dt(8+)ssx!ch7=qi%x-#lan9ef95!6lo&u8_z8v7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kehinde.pythonanywhere.com']
 
 
 # Application definition
