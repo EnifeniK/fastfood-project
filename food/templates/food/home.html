@@ -1,0 +1,74 @@
+{% extends "food/base.html" %}
+{% block content %}
+
+{% load static %}
+
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 style="color:white">Bunkej's Kitchen</h1>
+        <p style="color:white">We leave our legacy on your tongue...</p>
+        <a href="{% url 'mealpage' %}"><button type="button" class="btn btn-outline-warning">See our cuisines</button></a>
+        <a href="{% url 'objective' %}"><button type="button" class="btn btn-outline-info">Create your custom order</button></a>
+    </div>
+</div>
+<hr>
+<br>
+<h6>Take a look at our sumptuous <a href="{% url 'mealpage' %}" style="color:#f0ad4e">delicacies</a> ☝🏽. Explore till you find what you want. If you don't get exactly what you need, don't you worry 😉, we've got you ╰(*°▽°*)╯ 👌🏽, just create your own unique order by <a href="tel:+4477940791776" style="color:#5bc0de">calling</a> ☝🏽.</h6>
+<br>
+<hr>
+<!-- Footer -->
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 footer-about wow fadeInUp">
+                    <h4>About</h4></a>
+                    <p>
+                        We are a young business always looking for new and creative ways to help you with our services to ease your everyday work.
+                    </p>
+                    <p><a href="{% url 'objective' %}">Our Services</a></p>
+                    <p><a href="{% url 'aboutpage' %}">About</a></p>
+                </div>
+                <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+                    <h4>Contact</h4>
+                    <p><i class="fa fa-map-marker"></i> United Kingdom</p>
+                    <p><i class="fa fa-phone"></i> Phone: +447  7940  791776</p>
+                    <p><i class="fa fa-envelope"></i> Email: <a href="mailto:ebimkeji@gmail.com">ebimkeji@gmail.com</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
+                    <h4>Follow us</h4>
+                    <p>
+                        <a href="https://www.facebook.com/olubunmimoronkeji.enifeni" target="_blank" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/olubunmienifeni/" target="_blank" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 footer-copyright">
+                    <p>&copy; Bunkej's Kitchen 2021. All rights reserved <a href="https://azmind.com"></a></p>
+                </div>
+                <div class="col-md-7 footer-menu">
+                    <nav class="navbar navbar-dark navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% endblock %}
+
+
+

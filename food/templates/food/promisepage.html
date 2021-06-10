@@ -1,0 +1,55 @@
+{% extends "food/base.html" %}
+{% block content %}
+{% load static %}
+
+<h2 style="color:#5bc0de">Our Priority</h2>
+<p>We know you are busy with your everyday schedule, it could be going to work or taking care of the kids amongst many, therefore, we have made it our <a href="{% url 'promises' %}" style="color:rgba(255,193,7,1)">priority</a> to ease you of your stress by providing you with our catering service.</p>
+<hr>
+<h2 style="color:#5bc0de">Our Promises</h2>
+<div class="row">
+
+    <div class="column">
+        <img src="{% static 'food/express-delivery3.png' %}" alt="Speedy Delivery" style="width:100%">
+        <p style="color:rgba(255,193,7,1); text-align:center">Speedy Delivery</p>
+    </div>
+
+
+    <div class="column">
+        <img src="{% static 'food/steak.png' %}" style="width:100%">
+        <p style="color:rgba(255,193,7,1); text-align:center">Hot meals</p>
+    </div>
+
+
+    <div class="column">
+        <img src="{% static 'food/lunch-box.png' %}" style="width:100%">
+        <p style="color:rgba(255,193,7,1); text-align:center">Neat packaging</p>
+    </div>
+
+
+    <div class="column">
+        <img src="{% static 'food/delicious.png' %}" style="width:100%">
+        <p style="color:rgba(255,193,7,1); text-align:center">Tasty cuisine</p>
+    </div>
+
+
+    <div class="column">
+        <img src="{% static 'food/hearts.png' %}" style="width:100%">
+        <p style="color:rgba(255,193,7,1); text-align:center">Our warmth</p>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-lg-3 col-md-6">
+
+        <a href="{{ meal.url }}">
+            <img src="{{ meal.image.url }}" class="img-fluid mb-2">
+        </a>
+        <h6>{{ meal.title }}</h6>
+        <p style ="font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">{{ meal.description }}</p>
+
+    </div>
+</div>
+
+{% endblock %}

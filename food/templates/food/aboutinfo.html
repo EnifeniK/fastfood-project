@@ -1,0 +1,26 @@
+{% extends "food/base.html" %}
+{% block content %}
+{% load static %}
+
+
+<html>
+<head>
+    <style>
+img {
+  border: 5px solid #555;
+}
+</style>
+</head>
+<body>
+
+<div class="frame">
+    <img src="{% static 'food/mumimage.jpg' %}" alt="Owner's image" width="200">
+</div>
+
+I am Olubunmi Enifeni, the founder of Bunkej's Kitchen. I am a Nigerian. I gained my expertise on African cuisines culinary in Lagos state, Nigeria and earned a <a href="{% static 'food/certificate.png' %}" target="_blank" style="color:rgb(255,193,7,1)">certificate</a> before moving to the UK, where I started Bunkej's Kitchen.
+
+</body>
+</html>
+
+
+{% endblock %}
