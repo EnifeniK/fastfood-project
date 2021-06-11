@@ -25,7 +25,7 @@ SECRET_KEY = 'i(md_hv=u8dt(8+)ssx!ch7=qi%x-#lan9ef95!6lo&u8_z8v7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['kehinde.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.bunkejkitchen.info']
 
 
 # Application definition
