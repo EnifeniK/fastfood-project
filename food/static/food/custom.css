@@ -88,11 +88,13 @@ body, html {
 }
 
 
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
   padding: 50px;
-
+  margin-left: 30px
+  margin-right: 30px
 }
 
 /* Clear floats after image containers */
@@ -101,6 +103,8 @@ body, html {
   clear: both;
   display: table;
 }
+
+
 
 /* For the footer */
 

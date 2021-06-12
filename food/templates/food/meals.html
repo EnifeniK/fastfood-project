@@ -1,7 +1,6 @@
 {% extends "food/base.html" %}
 {% block content %}
 
-<!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -15,10 +14,11 @@
 <body style="background-color:white;">
 <h3 style="color:#5bc0de">Our Legendary Dishes</h3>
 
-
+<div class="container">
 <div class="row">
     {% for meal in meals %}
-    <div class="col-lg-2 col-md-6">
+
+    <div class="col-lg-3 col-md-6">
 
         {% if meal.url %}
         <a href="{% url 'orderpage' %}">
@@ -30,9 +30,9 @@
         {% endif %}
         <h6>{{ meal.title }}</h6>
         <p style ="font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">{{ meal.description }}</p>
-
     </div>
     {% endfor %}
+    </div>
 </div>
 </body>
 </html>
