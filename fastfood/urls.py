@@ -27,6 +27,7 @@ urlpatterns = [
     path('order/', views.orderpage, name='orderpage'),
     path('whatwedo/', views.objective, name='objective'),
     path('ourpriorities/', views.promises, name='promises'),
+    path('reviews/', views.ourreviews, name='ourrewiews'),
 
 ]
 

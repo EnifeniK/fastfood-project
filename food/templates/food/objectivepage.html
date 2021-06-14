@@ -1,33 +1,50 @@
 {% extends "food/base.html" %}
 {% block content %}
+{% load static %}
 
-<h2 style="color:#5bc0de">We cook family-size <a href="{% url 'mealpage' %}" style="color:#5bc0de">cuisines</a> and provide them in two ways:</h2>
+<div class="a-div">
+<h2 style="color:#5bc0de">We prepare <a href="{% url 'mealpage' %}" style="color:#5bc0de">cuisines</a> and provide them in two ways:</h2>
 
-<div class="row justify-content-center my-1">
-    <div class="col-md-11">
 <h5>Home services</h5> - We come to your house to make your meals for you.
-
-<br>
 <h5>Ready made delivery</h5> - We cook your meals for you from our kitchen and send it over to your house.
-    </div>
-</div>
-<hr>
 
-<h3 style="color:#5bc0de">How orders are made:</h3>
-<div class="row justify-content-center my-1">
+<hr>
+    <h3 style="color:#5bc0de">We also cook for special events:</h3>
     <div class="col-md-11">
-◻Family of 3 package
+        <img src="{% static 'food/wedding-day2.png' %}">   Wedding Anniversaries
+        <br>
+        <img src="{% static 'food/balloons1.png' %}"> Birthday Parties
+        <br>
+        <img src="{% static 'food/baby-shower.png' %}"> Baby Shower
+        <br>
+        <img src="{% static 'food/house-warming.png' %}"> House Warming
+        <br>
+        <img src="{% static 'food/graduation-party.png' %}"> Graduation Parties
+        <br>
+        <hr>
+        </div>
+
+    <h3 style="color:#5bc0de">Order Packages:</h3>
+        <div class="col-md-11">
+    <img src="{% static 'food/food-package1.png' %}"> Family-of-3 package
 <br>
-◻Family of 5 package
+    <img src="{% static 'food/food-package1.png' %}"> Family-of-5 package
 <br>
-◻Family of 8 package
+    <img src="{% static 'food/food-package1.png' %}"> Family-of-8 package
 <br>
-◻Family of 12 package
-    </div>
+    <img src="{% static 'food/food-package1.png' %}"> Family-of-12 package
+ <br>
+    <img src="{% static 'food/food-package1.png' %}"> Bachelor's package
+</div>
+    <hr>
+    <p>We are very flexible with our services. Taste, quantity and combination are tailored to your preference. Our order packages only serves as default sizes from which you can select.</p>
+
+
 </div>
 
 <br>
 
 <div class="container text-center"><a href="tel:+4477940791776" class="btn btn-outline-warning">Order Now!</a></div>
+<br>
 
 {% endblock %}

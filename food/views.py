@@ -25,3 +25,7 @@ def objective(request):
 
 def promises(request):
     return render(request, 'food/promisepage.html')
+
+
+def ourreviews(request):
+    return render(request, 'food/ourreviews.html')
