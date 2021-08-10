@@ -1,5 +1,5 @@
 .navbar-nav .nav-link {
-    color: rgba(255,193,7,1) !important;
+    color: white !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -57,7 +57,7 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
   color: white;
 }
 
@@ -122,22 +122,22 @@ body, html {
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: black;
   color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: black;
   color: white;
 }
 
 .fa-instagram {
-  background:  #833AB4;
+  background:  black;
   color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
+  background: black;
   color: white;
 }
 
